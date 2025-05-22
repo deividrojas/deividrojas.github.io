@@ -204,13 +204,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (checkoutBtn) {
         checkoutBtn.addEventListener('click', () => {
             if (cart.length > 0) {
-                alert('Procediendo al pago... (Funcionalidad de pago no implementada)');
-                // Aquí podrías redirigir a una página de pago o iniciar un proceso de checkout
-                // Por ejemplo: window.location.href = 'checkout.html';
-                // O limpiar el carrito después de un pago exitoso:
-                // cart = [];
-                // updateCart();
-                // renderCartItems();
+                window.location.href = 'payment.html';
             } else {
                 alert('Tu carrito está vacío. Agrega productos antes de proceder al pago.');
             }
